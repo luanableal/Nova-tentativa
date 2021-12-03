@@ -1,44 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
 
 
 body{
-    background:rgb(238, 238, 33);
+    background: rgb(20,57,106);
+    background: linear-gradient(90deg, rgba(20,57,106,1) 0%, rgba(99,185,238,1) 100%);
 }
 
 
 .container{
  text-align: center;
+ 
 }
 
+.conteudo{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 0px 10px; 
+}
 .container h1{
-    font-size: 2rem;
-}
-
-button{
-    padding: 0.3rem;
-    background: #d54e0c;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 2rem ;
-    border: none;
-    box-shadow: 0 0 3px black;
+    margin-top: 1em;
+    font-size: 3rem;
+    font-family: Roboto;
     
 }
 
+button{
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b9ee 5%, #468dcf 100%);
+	background-color:#63b9ee;
+	border-radius:6px;
+	border:1px solid #3867a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+    margin-bottom: 3em;
+    box-shadow: 5px 5px 5px black;
+}
+
 button:hover{
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .todos{
     margin: 0  auto 2rem;
     width: 50%;
-    background: rgb(187, 184, 184);
-    border-radius: 10px;
     padding: 1rem;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.678);
     font-family: 'Roboto', sans-serif;
-
+    background-image: url("./img/follhabranca.png");
+    background-size: 58vh;
+    background-position:center;
 }
 
 #true{
@@ -50,7 +68,6 @@ button:hover{
     font-weight: bolder;
     }
 
-img{
-    width: 30%
-}
+
+
 
