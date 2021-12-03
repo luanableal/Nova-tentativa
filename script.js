@@ -9,11 +9,9 @@ button.addEventListener("click", (event) =>{
     .then(response => response.json())
     .then(json => {
 
-        conteudo.innerHTML =  json.map( todos => `<div class="todos"> <h2>${todos.title}</h2> <p>${todos.id}</p></div>`).join("");
+        conteudo.innerHTML =  json.map( todos => `<div class="todos" id=${todos.completed}> <p>${todos.title}<p> <p>${todos.id}</p></div>`).join("");
 
-        
-
-       
+               
     })
 })
 
