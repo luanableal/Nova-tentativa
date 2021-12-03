@@ -1,0 +1,41 @@
+body{
+    background:rgb(238, 238, 33);
+}
+
+
+.container{
+ text-align: center;
+}
+
+.container h1{
+    font-size: 2rem;
+}
+
+button{
+    padding: 0.3rem;
+    background: #d54e0c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 2rem ;
+    border: none;
+    box-shadow: 0 0 3px black;
+    
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.todos{
+    margin: 0  auto 2rem;
+    width: 50%;
+    background: rgb(187, 184, 184);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.678);
+}
+
+img{
+    width: 30%
+}
