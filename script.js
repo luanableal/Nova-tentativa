@@ -8,10 +8,11 @@ button.addEventListener("click", (event) =>{
     fetch('https://jsonplaceholder.typicode.com/todos/')
     .then(response => response.json())
     .then(json => {
-
-        conteudo.innerHTML =  json.map( todos => `<div class="todos" id=${todos.completed}> <p>${todos.title}<p> <p>${todos.id}</p></div>`).join("");
-
-               
+        conteudo.innerHTML =  json.map( todos => `
+            <div class="todos ${todos.completed}"> 
+                <p>${todos.title}<p> 
+                <p>${todos.id}</p>
+            </div>`).join("");
     })
 })
 
